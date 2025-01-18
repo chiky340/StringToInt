@@ -42,7 +42,7 @@ public class IntToWord {
 
     }
 
-    public static void calc() {
+    public void calc() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("enter an input: ");
         String input = scanner.nextLine();
@@ -50,7 +50,7 @@ public class IntToWord {
         System.out.println(input + " is: " + NumberFormat.getCurrencyInstance().format(result));
     }
 
-    private static int wordsToNumber(String words) {
+    private int wordsToNumber(String words) {
         String[] tokens = words.toLowerCase().split("\\s+");
         int current = 0;
         int total = 0;

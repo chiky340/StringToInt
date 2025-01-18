@@ -1,7 +1,6 @@
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        IntToWord.calc();
+        IntToWord intToWord = new IntToWord();
+        intToWord.calc();
     }
 }
