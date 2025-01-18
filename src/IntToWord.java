@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class IntToWord {
 
-    private static final HashMap<String,Integer> intNumber = new HashMap<>();
-    private static final HashMap<String,Integer> multiplier = new HashMap<>();
+    private final HashMap<String,Integer> intNumber = new HashMap<>();
+    private final HashMap<String,Integer> multiplier = new HashMap<>();
 
-    static {
+    IntToWord() {
         intNumber.put("one",1);
         intNumber.put("two",2);
         intNumber.put("three",3);
