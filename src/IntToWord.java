@@ -1,3 +1,4 @@
+import java.text.NumberFormat;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -46,7 +47,7 @@ public class IntToWord {
         System.out.print("enter an input: ");
         String input = scanner.nextLine();
         int result = wordsToNumber(input);
-        System.out.println(input + " is: " + result);
+        System.out.println(input + " is: " + NumberFormat.getCurrencyInstance().format(result));
     }
 
     private static int wordsToNumber(String words) {
