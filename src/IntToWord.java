@@ -7,7 +7,12 @@ public class IntToWord {
     private final HashMap<String,Integer> intNumber = new HashMap<>();
     private final HashMap<String,Integer> multiplier = new HashMap<>();
 
-    IntToWord() {
+    public IntToWord(){
+        initializeIntNumber();
+        initializeMultiplier();
+    }
+
+     private void initializeIntNumber(){
         intNumber.put("one",1);
         intNumber.put("two",2);
         intNumber.put("three",3);
@@ -35,11 +40,12 @@ public class IntToWord {
         intNumber.put("seventy",70);
         intNumber.put("eighty",80);
         intNumber.put("ninety",90);
+    }
 
+    private void initializeMultiplier(){
         multiplier.put("hundred",100);
         multiplier.put("thousand",1_000);
         multiplier.put("million",1_000_000);
-
     }
 
     public void calc() {
